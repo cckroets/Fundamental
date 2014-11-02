@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.ckroetsch.fundamental.view.NewInvestmentView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/account_row_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+        android:id="@+id/name"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Math Investment"
+        android:textSize="20sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/add"
+            android:src="@drawable/ic_action_image_control_point"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Interest Rate"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"/>
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:id="@+id/interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            tools:text="10%"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Term"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"/>
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:id="@+id/term"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            tools:text="6 Months"/>
+
+    </LinearLayout>
+
+
+</com.ckroetsch.fundamental.view.NewInvestmentView>

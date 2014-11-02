@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-bold"
+            android:text="Your Investments"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:id="@+id/myInvestments"
+            android:orientation="vertical"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/view_my_investment"/>
+            <include layout="@layout/view_my_investment"/>
+            <include layout="@layout/view_my_investment"/>
+
+        </LinearLayout>
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="sans-serif-bold"
+            android:text="Available Investments"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/newInvestments"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/view_new_investment"/>
+            <include layout="@layout/view_new_investment"/>
+            <include layout="@layout/view_new_investment"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

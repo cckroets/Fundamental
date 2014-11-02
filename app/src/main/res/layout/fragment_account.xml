@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <com.ckroetsch.fundamental.view.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="Account Info"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-bold"
+            android:text="Accounts"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:orientation="vertical">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/account_row_margin"
+                android:gravity="center_vertical">
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/savingsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Savings (5%)"
+                    android:textSize="20sp"/>
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/savings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="right"
+                    android:textSize="20sp"
+                    tools:text="$500"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/account_row_margin"
+                android:gravity="center_vertical">
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Chequing"
+                    android:textSize="20sp"/>
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/chequing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="right"
+                    android:textSize="20sp"
+                    tools:text="$38"/>
+
+            </TableRow>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/transfer"
+                    android:layout_marginBottom="@dimen/account_row_margin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:textSize="20sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:text="TRANSFER"/>
+
+            </LinearLayout>
+
+
+
+        </TableLayout>
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif-bold"
+            android:text="Investments"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:id="@+id/investments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_investment_account"/>
+
+            <include layout="@layout/view_investment_account"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/seeMore"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/account_row_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif-bold"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:textColor="@color/blue"
+                android:text="SEE MORE"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/account_row_margin"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/account_row_margin"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="32dp">
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:text="Total"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"/>
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="right"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    tools:text="$1000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif-bold"
+            android:text="Loan"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="@dimen/account_row_margin">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/account_row_margin">
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/debtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Debt (10%)"
+                    android:textSize="20sp"/>
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/debt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="right"
+                    android:textSize="20sp"
+                    tools:text="$0"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/account_row_margin">
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Extra Charge"
+                    android:textSize="20sp"/>
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/nextPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="right"
+                    android:textSize="20sp"
+                    tools:text="$0"/>
+
+            </TableRow>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/takeLoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:textSize="20sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:text="TAKE LOAN"/>
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/payLoan"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:textSize="20sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:text="PAY LOAN"/>
+
+            </LinearLayout>
+
+
+
+
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif-bold"
+            android:text="Allowance"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:orientation="vertical">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/account_row_margin">
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Weekly Allowance"
+                    android:textSize="20sp"/>
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/allowance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="right"
+                    android:textSize="20sp"
+                    tools:text="$10"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/account_row_margin">
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Next Payment"
+                    android:textSize="20sp"/>
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/allowanceDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="right"
+                    android:textSize="20sp"
+                    tools:text="Nov. 2, 2014"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/account_row_margin">
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Savings Amount"
+                    android:textSize="20sp"/>
+
+                <com.ckroetsch.fundamental.view.TypefaceTextView
+                    android:id="@+id/savingsAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="right"
+                    android:textSize="20sp"
+                    tools:text="$2"/>
+
+            </TableRow>
+
+            <com.ckroetsch.fundamental.view.TypefaceTextView
+                android:id="@+id/cashOut"
+                android:layout_marginBottom="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-bold"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textColor="@color/blue"
+                android:text="CASH OUT"/>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>

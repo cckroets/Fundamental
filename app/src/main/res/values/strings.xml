@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fundamental</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="projections"><![CDATA[
+If you save <font color=#15BF05>%1$s</font> of allowance each week for <i>%2$s</i> you will earn <font color=#15BF05>%3$s</font>]]>
+    </string>
+    <string name="save_button">Change weekly savings to $%d for each allowance</string>
+
+    <array name="transfers">
+        <item>Savings to Chequing</item>
+        <item>Chequing to Savings</item>
+    </array>
+
+    <string name="transfer_chooser">Choose a Transfer</string>
+
+    <string name="cashOut">Your entire chequing balance ($%d) will be transferred to your bank account associated with Venmo.</string>
+
+</resources>

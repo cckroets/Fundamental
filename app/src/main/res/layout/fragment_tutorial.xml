@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/button"
+            android:orientation="vertical">
+
+            <com.ckroetsch.fundamental.view.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:maxWidth="300dp"
+                android:padding="2dp"
+                android:text="Fundamental"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+            <ImageView
+                android:src="@drawable/sample_images"
+                android:layout_margin="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="200dp"
+                android:layout_height="80dp"/>
+
+            <com.ckroetsch.fundamental.view.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:maxWidth="300dp"
+                android:padding="2dp"
+                android:text="You’re starting to get allowance.\n\nIt’s exciting to be getting some money! But taking care of your money is a big responsibility. "
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/button"
+            android:orientation="vertical">
+
+            <com.ckroetsch.fundamental.view.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:maxWidth="300dp"
+                android:padding="2dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Bank Tutorial"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+            <ImageView
+                android:layout_margin="4dp"
+                android:src="@drawable/sample_images_2"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+            <com.ckroetsch.fundamental.view.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:maxWidth="300dp"
+                android:padding="2dp"
+                android:text="A Savings Account earns you more money, the longer you keep money in it. But taking care of your money is a big responsibility.\n\nWith Fundamental, we’ll let you practice managing your own money but in a very safe way.\n\nAll the money is your allowance. You’ll learn to save, spend smartly, learn some financial skills, all while having lots of fun!\n\nWhen your money is stored, the bank will pay you for lending them your money. An interest rate describes the amount of extra money you will make. The higher it is the more you make! "
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/button"
+            android:orientation="vertical">
+
+            <com.ckroetsch.fundamental.view.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:maxWidth="300dp"
+                android:padding="2dp"
+                android:text="Investment Tutorial"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+            <ImageView
+                android:layout_margin="4dp"
+                android:src="@drawable/sample_images_3"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+            <com.ckroetsch.fundamental.view.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:maxWidth="300dp"
+                android:padding="2dp"
+                android:text="As a way to earn more interest, you can invest your money.\n\nAll investments come with a given length and rate. Investments with longer lengths will have better rates.\n\nInvestments are the best way to grow your money, but be careful when committing to investments! When an investment is made, the money must be kept for the length of the investment.\n\nAt the end of the investment, the money will be returned to you, at the posted interest rate. This is called a maturity."
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/button"
+            android:orientation="vertical">
+
+            <com.ckroetsch.fundamental.view.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:maxWidth="300dp"
+                android:padding="2dp"
+                android:text="Loans Tutorial"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+            <ImageView
+                android:layout_margin="4dp"
+                android:src="@drawable/debt_image"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+            <com.ckroetsch.fundamental.view.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:maxWidth="300dp"
+                android:padding="2dp"
+                android:text="\nLoans might seem like a good idea if you need money fast.
+Watch out! Loans come with a high interest rate, meaning that their value will grow quickly over time.
+If left alone, loans can quickly grow into a lot of debt.
+
+Debt is not good. Debt is when you owe somebody else money, and need to pay them back.
+Always think carefully before taking any debt, and make sure to pay back loans as soon as you can!"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

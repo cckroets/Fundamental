@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/blue"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Fundamental"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"/>
+
+        <com.ckroetsch.fundamental.view.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Fund"
+            android:textColor="@android:color/background_dark"
+            android:textSize="40sp"/>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="32dp"
+        android:text="You’re starting to get allowance. It’s exciting to be getting some money!\n\nBut taking care of your money is a big responsibility. "
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"/>
+
+</LinearLayout>
